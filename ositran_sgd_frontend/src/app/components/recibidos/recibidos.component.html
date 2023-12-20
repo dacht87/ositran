@@ -1,0 +1,227 @@
+<div class="row">
+    <div class="col-xs-2">
+        <label for="form-field-select-1">Prioridad</label>
+        <select class="form-control" id="form-field-select-1">
+            <option value="1">Todos</option>
+            <option value="1">Urgente</option>
+            <option value="1">Muy Urgente</option>
+        </select>
+    </div>
+    <div class="col-xs-2">
+        <label for="form-field-select-1">Tipo Documento</label>
+        <select class="form-control" id="form-field-select-1">
+            <option value="1">Todos</option>
+            <option value="1">Informe</option>
+        </select>
+    </div>
+    <div class="col-xs-2">
+        <label for="form-field-select-1">Unidad Orgánica</label>
+        <select class="form-control" id="form-field-select-1">
+            <option value="1">Todos</option>
+            <option value="1">Jefe de Contabilidad</option>
+            <option value="1">Jefe de Tesorería</option>
+            <option value="1">Trámite Documentario</option>
+        </select>
+    </div>
+    <div class="col-xs-2">
+        <label for="form-field-select-1">Accion</label>
+        <select class="form-control" id="form-field-select-1">
+            <option value="1">Todos</option>
+            <option value="1">Accion que corresponde</option>
+            <option value="1">Atender directamente</option>
+            <option value="1">Conocimiento</option>
+            <option value="1">Copia</option>
+            <option value="1">Difusión en el área</option>
+            <option value="1">Elaborar ayuda memoria</option>
+            <option value="1">En atención a lo solicitado</option>
+            <option value="1">Para ejecución del servicio contratado</option>
+            <option value="1">Para Firmar/Visar</option>
+            <option value="1">Proyectar respuesta</option>
+            <option value="1">Revisar e Informar</option>
+        </select>
+    </div>
+    <div class="col-xs-2">
+        <label for="form-field-select-1">Cliente</label>
+        <select class="form-control" id="form-field-select-1">
+            <option value="1">Todos</option>
+            <option value="1">IIRSA NORTE</option>
+            <option value="1">COVISOL</option>
+            <option value="1">CONTROLMATRIC</option>
+            <option value="1">COVINCA</option>
+        </select>
+    </div>
+    <div class="col-xs-2">
+        <label for="form-field-select">Rango de Fecha</label>
+        <select class="form-control" id="form-field-select-1">
+            <option value="1">Todos</option>
+            <option value="1">1 día</option>
+            <option value="1">7 días</option>
+            <option value="1">60 días</option>
+            <option value="1">90 días</option>
+            <option value="1">Establecer rango</option>
+        </select>
+    </div>
+</div>
+<p></p>
+<div class="row">
+    <div class="col-xs-7">
+        <a [routerLink]="['Recibidos2']" class="btn btn-primary"><i class="ace-icon fa fa-search"></i>  Filtrar</a>
+    </div>
+    <div class="col-xs-5">
+        <button class="btn btn-white btn-info"><i class="ace-icon fa fa-check-square-o"></i>Atender</button>
+        <button class="btn btn-white btn-info"><i class="ace-icon fa fa-external-link"></i>Derivar</button>
+        <button class="btn btn-white btn-info"><i class="ace-icon fa fa-download"></i>Exportar</button>
+        <button class="btn btn-white btn-info"><i class="ace-icon fa fa-folder-o"></i>No leído</button>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <table id="dynamic-table" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="center">
+                            <label class="pos-rel">
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl"></span>
+                            </label>
+                        </th>
+                        <th>N° de Trámite</th>
+                        <th>Datos del Documento</th>
+                        <th>Asunto</th>
+                        <th>Fecha y Remitente</th>
+                        <th>Organizacion/Administrado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="unread">
+                        <td class="center">
+                            <label class="pos-rel">
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl"></span>
+                            </label>
+                        </td>
+
+                        <td class="center">
+                            <div class="action-buttons">
+                                <a href="#" class="green show-details-btn" title="Show Details">
+                                    20230017777
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span class="label label-warning">
+                                    Urgente
+                                </span>
+                                <span class="label label-danger arrowed-in">Confidencial</span>
+                                <span class="label label-success arrowed">MPV</span>
+                            </div>
+                            INFORME - 036-2018/ST OSITRAN-POA-MPQ
+                            <br>
+                            <div>
+                                <button class="btn btn-minier btn-white"><i class="ace-icon fa fa-mail-reply"></i>Devolver</button>
+                                <button class="btn btn-minier btn-white"><i class="ace-icon fa fa-external-link"></i>Derivar</button>
+                            </div>
+                        </td>
+                        <td>INFORME TECNICO DE ACTIVIDADES PARA AUTORIZACION DE PAGO</td>
+                        <td>
+                            <b>Recibido:</b>29/11/2023<br>
+                            <b>Remitente:</b>Juan Carlos Bengoa Achata<br>
+                            <b>Área:</b>Jefe de Tecnologías de la Información
+                        </td>
+                        <td>
+                            <b>Tipo:</b>Empresa<br>
+                            <b>Cliente:</b>INTERSUR CONSECIONES S.A.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">
+                            <label class="pos-rel">
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl"></span>
+                            </label>
+                        </td>
+
+                        <td class="center">
+                            <div class="action-buttons">
+                                <a href="#" class="green show-details-btn" title="Show Details">
+                                    20234317765
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="">
+                                <span class="label label-danger">
+                                    Muy Urgente
+                                </span>
+                                <span class="label label-danger arrowed-in">Confidencial</span>
+                                <span class="label label-success arrowed">MPV</span>
+                            </div>
+                            INFORME - 036-2018/ST OSITRAN-POA-MPQ
+                            <br>
+                            <div>
+                                <button class="btn btn-minier btn-white"><i class="ace-icon fa fa-mail-reply"></i>Devolver</button>
+                                <button class="btn btn-minier btn-white"><i class="ace-icon fa fa-external-link"></i>Derivar</button>
+                            </div>
+                        </td>
+                        <td>INFORME TECNICO DE ACTIVIDADES PARA AUTORIZACION DE PAGO</td>
+                        <td>
+                            <b>Recibido:</b>29/11/2023<br>
+                            <b>Remitente:</b>Juan Carlos Bengoa Achata<br>
+                            <b>Área:</b>Jefe de Tecnologías de la Información
+                        </td>
+                        <td>
+                            <b>Tipo:</b>Empresa<br>
+                            <b>Cliente:</b>INTERSUR CONSECIONES S.A.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">
+                            <label class="pos-rel">
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl"></span>
+                            </label>
+                        </td>
+
+                        <td class="center">
+                            <div class="action-buttons">
+                                <a href="#" class="green show-details-btn" title="Show Details">
+                                    20230245767
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="">
+                                <span class="label label-warning">
+
+                                    Urgente
+                                </span>
+                                <span class="label label-danger arrowed-in">Confidencial</span>
+
+                            </div>
+                            INFORME - 036-2018/ST OSITRAN-POA-MPQ
+                            <br>
+                            <div>
+                                <button class="btn btn-minier btn-white"><i class="ace-icon fa fa-mail-reply"></i>Devolver</button>
+                                <button class="btn btn-minier btn-white"><i class="ace-icon fa fa-external-link"></i>Derivar</button>
+                            </div>
+                        </td>
+                        <td>INFORME TECNICO DE ACTIVIDADES PARA AUTORIZACION DE PAGO</td>
+                        <td>
+                            <b>Recibido:</b>29/11/2023<br>
+                            <b>Remitente:</b>Juan Carlos Bengoa Achata<br>
+                            <b>Área:</b>Jefe de Tecnologías de la Información
+                        </td>
+                        <td>
+                            <b>Tipo:</b>Empresa<br>
+                            <b>Cliente:</b>INTERSUR CONSECIONES S.A.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
